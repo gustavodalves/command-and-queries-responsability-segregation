@@ -1,5 +1,5 @@
-import ICommand from "./users/commands/command";
-import IHandler from "./users/handlers/handler";
+import ICommand from "./commom/command";
+import IHandler from "./commom/handler";
 
 export default class CommandMediator {
     private readonly handlers: IHandler[] = []

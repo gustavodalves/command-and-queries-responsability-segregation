@@ -1,4 +1,4 @@
-import ICommand from "./command";
+import ICommand from "../../commom/command";
 
 export default class CreateUserCommand implements ICommand {
     commandName: string = "CreateUserCommand";

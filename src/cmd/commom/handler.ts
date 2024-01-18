@@ -1,4 +1,4 @@
-import ICommand from "../commands/command";
+import ICommand from "./command";
 
 export default interface IHandler {
     commandName: string

@@ -1,8 +1,8 @@
-import ICommand from "../commands/command";
+import ICommand from "../../commom/command";
 import CreateUserCommand from "../commands/create-user";
 import User from "../domain/models/user";
 import UserRepository from "../domain/repositories/user-repository";
-import IHandler from "./handler";
+import IHandler from "../../commom/handler";
 
 export default class CreateUserHandler implements IHandler {
     commandName: string = "CreateUserCommand";
