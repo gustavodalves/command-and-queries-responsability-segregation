@@ -17,4 +17,8 @@ export default abstract class Entity {
     ) {
         events.forEach(item => this.events.push(item))
     }
+
+    getEvents() {
+        return this.events
+    }
 }

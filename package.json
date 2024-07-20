@@ -3,8 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "npx jest --detectOpenHandles"
+  },
   "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.11",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2",
     "tsx": "^4.7.0",
-    "typescript": "^5.3.3"
+    "@faker-js/faker": "^8.4.1",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.616.0",
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.8.0",
+    "mysql2": "^3.10.3",
+    "sqs-consumer": "^11.0.1"
   }
 }

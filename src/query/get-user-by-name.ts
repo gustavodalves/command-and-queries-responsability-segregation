@@ -1,11 +1,19 @@
-import UserDatabase from "../../fakes/database/user";
+import { UserDao } from "./app/dao";
 
 export default class GetUserByName {
-    private readonly userDatabase: UserDatabase = UserDatabase.getInstance()
+    constructor(
+        private readonly userDao: UserDao
+    ) {}
 
-    findByName(
+    async execute(
         name: string
     ) {
-        return this.userDatabase.findBy('name', name)
+        const user = await this.userDao.findBy(name)
+
+        if(!user) {
+            throw new Error("User not founded")
+        }
+
+        return user
     }
 }
